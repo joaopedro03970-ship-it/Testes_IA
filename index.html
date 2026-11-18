@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do Zero à Entrega — Guia de Projeto Completo</title>
+  <meta name="description" content="Guia interativo, moderno e didático para estruturar e desenvolver um projeto completo sozinho: TCC, projeto pessoal ou startup." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Barra de progresso de leitura -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">Z<span>→</span>E</span>
+        <span class="brand-text">Do Zero à Entrega</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#jornada" class="nav-link">Jornada</a></li>
+          <li><a href="#etapa1" class="nav-link">Etapas</a></li>
+          <li><a href="#plano" class="nav-link">Plano de ação</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+        <a href="#plano" class="btn btn-sm btn-primary nav-cta">Começar agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+      <div class="container hero-inner">
+        <span class="badge"><span class="badge-dot"></span> Guia completo para quem faz tudo sozinho</span>
+        <h1>Transforme uma ideia em um <span class="gradient-text">projeto real.</span></h1>
+        <p class="hero-lead">
+          Um roteiro prático, passo a passo, para estruturar e desenvolver um projeto do zero à entrega —
+          aplicável ao seu <strong>TCC</strong>, projeto pessoal ou startup. Sem mistério: só o que realmente funciona.
+        </p>
+        <div class="hero-actions">
+          <a href="#jornada" class="btn btn-primary btn-lg">Começar a jornada <span aria-hidden="true">→</span></a>
+          <a href="#plano" class="btn btn-ghost btn-lg">Ver plano de ação</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>06</strong><span>etapas essenciais</span></div>
+          <div class="stat"><strong>100%</strong><span>aplicável na prática</span></div>
+          <div class="stat"><strong>∞</strong><span>exemplos reais</span></div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" /></svg>
+      </div>
+    </section>
+
+    <!-- ===================== COMO USAR ===================== -->
+    <section class="section intro-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Antes de começar</span>
+          <h2>Como usar este guia</h2>
+          <p>Não é um texto para ler e esquecer. É um roteiro para aplicar no seu projeto enquanto você avança.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card intro-card reveal">
+            <div class="icon-box icon-indigo">🧭</div>
+            <h3>Leia na ordem</h3>
+            <p>Cada etapa alimenta a próxima. Pular direto para o código é o erro clássico de quem começa sozinho.</p>
+          </article>
+          <article class="card intro-card reveal">
+            <div class="icon-box icon-teal">🛠️</div>
+            <h3>Aplique no seu caso</h3>
+            <p>Use os exemplos como modelo, mas substitua pelos dados do <em>seu</em> problema, público e contexto.</p>
+          </article>
+          <article class="card intro-card reveal">
+            <div class="icon-box icon-amber">✅</div>
+            <h3>Marque o progresso</h3>
+            <p>Vá ao plano de ação e marque cada item concluído. Seu progresso fica salvo no navegador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JORNADA / TIMELINE ===================== -->
+    <section id="jornada" class="section timeline-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Visão geral</span>
+          <h2>A jornada do projeto</h2>
+          <p>Seis etapas conectadas. Clique em cada marco para pular direto para o conteúdo.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <a href="#etapa1" class="timeline-item">
+            <span class="timeline-node">1</span>
+            <span class="timeline-content"><strong>Ideação</strong><small>Problema e público</small></span>
+          </a>
+          <a href="#etapa2" class="timeline-item">
+            <span class="timeline-node">2</span>
+            <span class="timeline-content"><strong>Estratégia</strong><small>SWOT e diferencial</small></span>
+          </a>
+          <a href="#etapa3" class="timeline-item">
+            <span class="timeline-node">3</span>
+            <span class="timeline-content"><strong>Requisitos</strong><small>O que o sistema faz</small></span>
+          </a>
+          <a href="#etapa4" class="timeline-item">
+            <span class="timeline-node">4</span>
+            <span class="timeline-content"><strong>Modelagem</strong><small>Fluxos e arquitetura</small></span>
+          </a>
+          <a href="#etapa5" class="timeline-item">
+            <span class="timeline-node">5</span>
+            <span class="timeline-content"><strong>Planejamento</strong><small>Kanban, MVP, prazo</small></span>
+          </a>
+          <a href="#etapa6" class="timeline-item">
+            <span class="timeline-node">6</span>
+            <span class="timeline-content"><strong>Entrega</strong><small>Código, testes, demo</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 1 ===================== -->
+    <section id="etapa1" class="section phase phase--1">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 01</span>
+          <div class="icon-box phase-icon">💡</div>
+          <h2>Ideação e Definição do Problema</h2>
+          <p>Antes de pensar em telas ou tecnologia, prove que existe uma dor real — e que vale a pena resolvê-la.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">🔍</div>
+            <h3>Valide a dor real</h3>
+            <p>Não pergunte “você usaria?”. Pergunte <strong>“como você faz isso hoje?”</strong>. Observe o trabalho atual, os improvisos e as reclamações recorrentes.</p>
+            <ul class="mini-list">
+              <li>Faça 5 a 10 entrevistas com pessoas do contexto.</li>
+              <li>Anote a linguagem exata que elas usam.</li>
+              <li>Procure o que já é feito manualmente (planilhas, papel, WhatsApp).</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">📊</div>
+            <h3>Pesquise o mercado</h3>
+            <p>Descubra o que já existe e onde ainda dá para melhorar. Você não precisa inventar tudo — precisa entender o cenário.</p>
+            <ul class="mini-list">
+              <li>Busque 3 a 5 soluções parecidas e teste uma delas.</li>
+              <li>Leia avaliações negativas: ali está a oportunidade.</li>
+              <li>Anote preço, público e principal promessa de cada uma.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🎯</div>
+            <h3>Defina o público-alvo</h3>
+            <p>“Todo mundo” não é público. Crie uma persona clara: quem é, o que faz, qual dor sente e o que espera ganhar.</p>
+            <ul class="mini-list">
+              <li>Idade, papel, rotina e ferramentas que já usa.</li>
+              <li>Objetivo principal e maior frustração.</li>
+              <li>Uma frase que resume: “Preciso de algo que me ajude a...”.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="example-box reveal">
+          <div class="example-head"><span>🧪</span><strong>Exemplo real — Agendamento para clínica</strong></div>
+          <p>Você entrevista 6 recepcionistas e descobre que todas perdem ~40 min/dia confirmando consultas por WhatsApp e anotações manuais em papel. Isso é uma <strong>dor mensurável</strong>. Sua persona: “Marina, 34 anos, recepcionista, gerencia 3 profissionais e odeia conflito de horários”.</p>
+          <div class="example-grid">
+            <div><span class="tag tag-red">Dor</span> Perda de tempo e horários duplicados.</div>
+            <div><span class="tag tag-green">Evidência</span> 6 de 6 entrevistadas relataram o mesmo problema.</div>
+            <div><span class="tag tag-blue">Oportunidade</span> Agenda única com confirmação automática.</div>
+          </div>
+        </div>
+
+        <div class="tip-box reveal">
+          <span class="tip-icon">💡</span>
+          <div><strong>Dica prática:</strong> escreva o problema em uma frase antes de qualquer código: <em>“[Pessoa] tem dificuldade em [tarefa] porque [motivo], o que causa [consequência].”</em> Se você não consegue preencher, ainda não entendeu o problema.</div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> declaração do problema + 1 ou 2 personas + resumo da pesquisa de mercado.</div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 2 ===================== -->
+    <section id="etapa2" class="section phase phase--2">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 02</span>
+          <div class="icon-box phase-icon">🧭</div>
+          <h2>Análise Estratégica</h2>
+          <p>Olhe para dentro e para fora do seu projeto. A Matriz SWOT organiza o que você tem, o que falta e onde está a chance de se destacar.</p>
+        </div>
+
+        <div class="reveal">
+          <h3 class="subheading">Como montar a Matriz SWOT na prática</h3>
+          <div class="steps">
+            <div class="step"><span>1</span><p>Defina o <strong>objetivo</strong> da análise (ex.: “lançar um app de entregas de remédios”).</p></div>
+            <div class="step"><span>2</span><p>Liste fatos, não opiniões. Separe o que é <strong>interno</strong> (você controla) do que é <strong>externo</strong> (mercado).</p></div>
+            <div class="step"><span>3</span><p>Cruzando os quadrantes, transforme ameaças em planos e forças em vantagens.</p></div>
+          </div>
+
+          <div class="swot">
+            <div class="swot-cell swot-s">
+              <h4>💪 Forças <small>(interno / positivo)</small></h4>
+              <ul><li>Conhecimento do problema por experiência própria.</li><li>Equipe pequena = decisões rápidas.</li><li>Código próprio, sem dependência de terceiros.</li></ul>
+            </div>
+            <div class="swot-cell swot-w">
+              <h4>⚠️ Fraquezas <small>(interno / negativo)</small></h4>
+              <ul><li>Orçamento limitado para marketing.</li><li>Sem experiência em design de interface.</li><li>Pouco tempo disponível por semana.</li></ul>
+            </div>
+            <div class="swot-cell swot-o">
+              <h4>🚀 Oportunidades <small>(externo / positivo)</small></h4>
+              <ul><li>Concorrentes com avaliações ruins sobre atraso.</li><li>Crescimento do mercado de saúde digital.</li><li>Parcerias com farmácias locais.</li></ul>
+            </div>
+            <div class="swot-cell swot-t">
+              <h4>🌩️ Ameaças <small>(externo / negativo)</small></h4>
+              <ul><li>Grandes apps podendo copiar a ideia.</li><li>Mudanças em regras de entrega de medicamentos.</li><li>Usuários resistentes a trocar de hábito.</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="card highlight-card">
+            <div class="card-icon">⭐</div>
+            <h3>Diferencial competitivo</h3>
+            <p>É o motivo pelo qual alguém escolhe <strong>você</strong> e não o concorrente. Some o que você faz de melhor com o que o mercado ainda não resolveu.</p>
+            <div class="formula">Força + Oportunidade = Diferencial</div>
+            <p class="muted">Exemplo: “Entrega de remédios em até 40 min com confirmação por WhatsApp e receita validada digitalmente.”</p>
+          </div>
+          <div class="tip-box tip-box--vertical">
+            <span class="tip-icon">💡</span>
+            <div><strong>Dica prática:</strong> escreva sua proposta de valor em uma frase: <em>“Para [público], que tem [problema], nossa solução oferece [benefício], diferente de [concorrente] porque [diferencial].”</em> Teste essa frase com 3 pessoas. Se não entenderem, simplifique.</div>
+          </div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> Matriz SWOT preenchida + proposta de valor em uma frase.</div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 3 ===================== -->
+    <section id="etapa3" class="section phase phase--3">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 03</span>
+          <div class="icon-box phase-icon">📋</div>
+          <h2>Levantamento de Requisitos</h2>
+          <p>Traduza o problema em “o que o sistema precisa fazer”. Aqui a clareza evita retrabalho depois.</p>
+        </div>
+
+        <div class="tabs reveal" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Tipos de requisito">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-func" data-tab="tab-func">⚙️ Funcionais</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-nao" data-tab="tab-nao">🎨 Não funcionais</button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-regras" data-tab="tab-regras">📏 Regras de negócio</button>
+          </div>
+
+          <div class="tab-panel active" id="tab-func" role="tabpanel">
+            <p class="tab-intro">Descrevem <strong>o que o sistema faz</strong> — ações e funcionalidades visíveis para o usuário.</p>
+            <ul class="req-list">
+              <li><span>RF-01</span> O sistema deve permitir que o usuário se cadastre com e-mail e senha.</li>
+              <li><span>RF-02</span> O sistema deve permitir criar, editar e cancelar um agendamento.</li>
+              <li><span>RF-03</span> O sistema deve enviar uma confirmação automática por WhatsApp.</li>
+              <li><span>RF-04</span> O sistema deve exibir um painel com os agendamentos do dia.</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="tab-nao" role="tabpanel">
+            <p class="tab-intro">Definem <strong>como o sistema se comporta</strong> — qualidade, desempenho, segurança e usabilidade.</p>
+            <ul class="req-list">
+              <li><span>RNF-01</span> A página deve carregar em menos de 2 segundos em 4G.</li>
+              <li><span>RNF-02</span> Senhas devem ser armazenadas com hash (nunca em texto puro).</li>
+              <li><span>RNF-03</span> A interface deve ser utilizável no celular (responsive).</li>
+              <li><span>RNF-04</span> O sistema deve estar disponível 99% do tempo.</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="tab-regras" role="tabpanel">
+            <p class="tab-intro">São as <strong>leis do seu domínio</strong> — restrições que o negócio impõe, mesmo que o usuário não veja.</p>
+            <ul class="req-list">
+              <li><span>RN-01</span> Não é permitido agendar dois horários iguais para o mesmo profissional.</li>
+              <li><span>RN-02</span> Cancelamentos só são aceitos até 2 horas antes da consulta.</li>
+              <li><span>RN-03</span> Só recepcionistas podem cancelar agendamentos de terceiros.</li>
+              <li><span>RN-04</span> Um agendamento só é confirmado após pagamento aprovado.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="card">
+            <div class="card-icon">🗣️</div>
+            <h3>Histórias de usuário</h3>
+            <p>Outra forma de escrever requisitos, do ponto de vista de quem usa:</p>
+            <blockquote>“Como <strong>recepcionista</strong>, quero <strong>ver a agenda do dia</strong> para <strong>organizar a rotina da clínica</strong>.”</blockquote>
+            <p class="muted">Fórmula: <em>Como [persona], quero [ação], para [benefício].</em></p>
+          </div>
+          <div class="tip-box tip-box--vertical">
+            <span class="tip-icon">💡</span>
+            <div><strong>Dica prática:</strong> todo requisito deve ser <strong>testável</strong>. Evite vagos como “ser rápido” ou “ser bonito”. Prefira “carregar em até 2s” ou “ter contraste mínimo de 4.5:1”.</div>
+          </div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> lista de requisitos funcionais, não funcionais e regras de negócio (com IDs).</div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 4 ===================== -->
+    <section id="etapa4" class="section phase phase--4">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 04</span>
+          <div class="icon-box phase-icon">🏗️</div>
+          <h2>Modelagem e Arquitetura</h2>
+          <p>Desenhe o sistema antes de construí-lo. Um bom mapa hoje evita semanas de retrabalho amanhã.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">📱</div>
+            <h3>Fluxo de telas e protótipo</h3>
+            <p>Comece no papel: desenhe as telas e as setas entre elas. Depois suba para um protótipo de baixa fidelidade.</p>
+            <ul class="mini-list">
+              <li>Fluxo: Login → Agenda → Novo agendamento → Confirmação.</li><li>Ferramentas: Figma, FigJam, draw.io ou papel.</li><li>Teste o fluxo com uma pessoa antes de refinar.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🗺️</div>
+            <h3>Diagramas básicos</h3>
+            <p>Você não precisa de UML completo. Três diagramas resolvem 90% dos projetos:</p>
+            <ul class="mini-list">
+              <li><strong>Fluxograma:</strong> decisões e caminhos do usuário.</li>
+              <li><strong>Caso de uso:</strong> atores e ações (ator = persona).</li>
+              <li><strong>Modelo de dados (ER):</strong> entidades e relações.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">⚙️</div>
+            <h3>Escolha das tecnologias</h3>
+            <p>Escolha pelo contexto, não pelo hype. Critérios: tempo, conhecimento da equipe, escala e custo.</p>
+            <ul class="mini-list">
+              <li>Web simples: HTML/CSS/JS + Firebase ou Supabase.</li>
+              <li>App completo: React + Node.js + Postgres.</li><li>Baixo código: FlutterFlow, N8N ou Notion + automações.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="example-box reveal">
+          <div class="example-head"><span>🧩</span><strong>Exemplo real — Arquitetura da clínica</strong></div>
+          <div class="arch-flow">
+            <span class="arch-node">📱 Interface (React)</span><span class="arch-arrow">→</span>
+            <span class="arch-node">🔐 API (Node.js)</span><span class="arch-arrow">→</span>
+            <span class="arch-node">🗄️ Banco (Postgres)</span>
+          </div>
+          <p class="muted">Entidades principais: <code>Paciente</code>, <code>Profissional</code>, <code>Agendamento</code> e <code>Serviço</code>. Um <code>Agendamento</code> pertence a um <code>Paciente</code> e a um <code>Profissional</code> — e não pode ter a mesma data/hora que outro agendamento do mesmo profissional (regra RN-01).</p>
+        </div>
+
+        <div class="tip-box reveal">
+          <span class="tip-icon">💡</span>
+          <div><strong>Dica prática:</strong> se você está começando, escolha tecnologia que você consiga <strong>terminar</strong>. Um sistema simples e entregue vale mais que uma arquitetura perfeita e inacabada.</div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> protótipo de baixa fidelidade + diagramas simples + decisão tecnológica justificada.</div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 5 ===================== -->
+    <section id="etapa5" class="section phase phase--5">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 05</span>
+          <div class="icon-box phase-icon">🗓️</div>
+          <h2>Planejamento e Metodologia Ágil</h2>
+          <p>Trabalhando sozinho, disciplina substitui reuniões. Kanban, MVP e um cronograma honesto mantêm você no caminho.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">📌</div>
+            <h3>Kanban individual</h3>
+            <p>Três colunas: <strong>A fazer → Fazendo → Pronto</strong>. Limite o “Fazendo” a 1 ou 2 tarefas para não se dispersar.</p>
+            <div class="kanban-mini">
+              <div class="kcol"><span>A fazer</span><small>Criar login</small><small>Tela de agenda</small></div>
+              <div class="kcol"><span>Fazendo</span><small>Formulário de agendamento</small></div>
+              <div class="kcol"><span>Pronto</span><small>Protótipo ✓</small></div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🎯</div>
+            <h3>Defina o MVP</h3>
+            <p>MVP é a menor versão que entrega valor real. Separe o <strong>essencial</strong> do <strong>desejável</strong> sem dó.</p>
+            <div class="mvp-split">
+              <div class="mvp-in"><strong>Entra no MVP</strong><span>Cadastro</span><span>Agendar</span><span>Listar agenda</span></div>
+              <div class="mvp-out"><strong>Fica para depois</strong><span>Relatórios</span><span>Chat</span><span>App nativo</span></div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">⏳</div>
+            <h3>Cronograma realista</h3>
+            <p>Estime em blocos de meio período e some <strong>20–30% de folga</strong> para imprevistos. Planeje por semanas.</p>
+            <ul class="mini-list">
+              <li>Semana 1: ideação + requisitos + protótipo.</li>
+              <li>Semana 2–3: desenvolvimento do MVP.</li>
+              <li>Semana 4: testes, ajustes e apresentação.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="example-box reveal">
+          <div class="example-head"><span>📆</span><strong>Exemplo real — Sprint de 2 semanas</strong></div>
+          <div class="sprint-grid">
+            <div><span class="tag tag-blue">Seg</span> Configurar projeto e banco</div>
+            <div><span class="tag tag-blue">Ter</span> Tela de login</div>
+            <div><span class="tag tag-blue">Qua</span> Cadastro de paciente</div>
+            <div><span class="tag tag-blue">Qui</span> Formulário de agendamento</div>
+            <div><span class="tag tag-blue">Sex</span> Regra de horário duplicado</div>
+            <div><span class="tag tag-green">Sexta seguinte</span> Revisão + demo para 1 pessoa</div>
+          </div>
+        </div>
+
+        <div class="tip-box reveal">
+          <span class="tip-icon">💡</span>
+          <div><strong>Dica prática:</strong> no fim de cada semana, responda: <em>“O que andou, o que travou, o que eu tiro da próxima semana?”</em> Esse ritual de 10 minutos substitui uma equipe inteira de acompanhamento.</div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> quadro Kanban, escopo do MVP e cronograma semanal com folga.</div>
+      </div>
+    </section>
+
+    <!-- ===================== ETAPA 6 ===================== -->
+    <section id="etapa6" class="section phase phase--6">
+      <div class="container">
+        <div class="phase-header reveal">
+          <span class="phase-number">Etapa 06</span>
+          <div class="icon-box phase-icon">🚀</div>
+          <h2>Desenvolvimento, Testes e Entrega</h2>
+          <p>Hora de escrever código com cuidado, testar de verdade e apresentar com confiança.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">🧹</div>
+            <h3>Boas práticas de código</h3>
+            <ul class="mini-list">
+              <li>Nomes claros: <code>calcularTotal()</code> > <code>fn1()</code>.</li>
+              <li>Funções pequenas, cada uma com uma responsabilidade.</li>
+              <li>Evite repetir código (princípio DRY).</li>
+              <li>Comente o <strong>porquê</strong>, não o óbvio.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🌿</div>
+            <h3>Controle de versão com Git</h3>
+            <ul class="mini-list">
+              <li>Commits pequenos e frequentes, com mensagens claras.</li>
+              <li><code>main</code> estável + branches para novas funções.</li>
+              <li><code>.gitignore</code> para não subir senhas e <code>node_modules</code>.</li>
+              <li>README com como instalar, rodar e usar.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">🧪</div>
+            <h3>Testes e validação</h3>
+            <ul class="mini-list">
+              <li><strong>Unitário:</strong> testa uma função isolada.</li>
+              <li><strong>Integração:</strong> testa partes juntas (ex.: salvar no banco).</li>
+              <li><strong>Funcional:</strong> você usa o sistema como usuário.</li>
+              <li>Peça para 1 pessoa de fora testar sem ajuda.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="two-col reveal">
+          <div class="example-box example-box--inline">
+            <div class="example-head"><span>💬</span><strong>Exemplo de bons commits</strong></div>
+            <div class="code-block">
+              <span>✅ feat: adiciona cadastro de paciente</span>
+              <span>✅ fix: corrige horário duplicado (RN-01)</span>
+              <span>✅ docs: escreve README de instalação</span>
+              <span>❌ updates</span>
+            </div>
+          </div>
+          <div class="tip-box tip-box--vertical">
+            <span class="tip-icon">💡</span>
+            <div><strong>Dica prática — apresentação final:</strong> monte um roteiro de 5 minutos: (1) o problema, (2) a evidência, (3) a solução, (4) um demo ao vivo, (5) resultados e próximos passos. Ensaiar uma vez evita travar na hora.</div>
+          </div>
+        </div>
+
+        <div class="deliverable reveal"><span>📦 Entregável:</span> repositório organizado, testes executados, README e uma apresentação/demo pronta.</div>
+      </div>
+    </section>
+
+    <!-- ===================== PLANO DE AÇÃO ===================== -->
+    <section id="plano" class="section checklist-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Seu progresso</span>
+          <h2>Plano de ação interativo</h2>
+          <p>Marque o que você já concluiu. O progresso fica salvo automaticamente neste navegador.</p>
+        </div>
+
+        <div class="checklist-wrap reveal">
+          <div class="checklist-top">
+            <div>
+              <strong>Progresso geral</strong>
+              <span id="progressText">0 de 18 itens concluídos</span>
+            </div>
+            <strong id="progressPercent">0%</strong>
+          </div>
+          <div class="progress-track"><div class="progress-fill" id="checkProgress"></div></div>
+
+          <div class="checklist-groups" id="checklistGroups">
+            <!-- Preenchido via JavaScript -->
+          </div>
+
+          <button class="btn btn-ghost btn-reset" id="resetChecklist">↺ Reiniciar progresso</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section faq-section">
+      <div class="container container-narrow">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Dúvidas comuns</span>
+          <h2>Perguntas que todo iniciante faz</h2>
+        </div>
+
+        <div class="accordion reveal" id="accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false"><span>Preciso saber programar antes de começar?</span><span class="acc-icon">+</span></button>
+            <div class="acc-content"><p>Não. Você começa pelas etapas de ideação, pesquisa e requisitos. Aprender a programar pode — e deve — acontecer junto com o desenvolvimento do MVP. Escolha uma tecnologia simples e aprenda enquanto constrói.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false"><span>Qual tecnologia devo escolher?</span><span class="acc-icon">+</span></button>
+            <div class="acc-content"><p>A que você consegue terminar no seu prazo. Para começar: HTML/CSS/JavaScript com um backend pronto (Firebase ou Supabase). Se já tem mais experiência, React + Node.js é uma combinação sólida e muito demandada.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false"><span>Como estimar tempo trabalhando sozinho?</span><span class="acc-icon">+</span></button>
+            <div class="acc-content"><p>Divida tudo em tarefas de no máximo meio período. Some o total e acrescente 20–30% de folga. Sempre subestime o tempo das primeiras vezes — a folga existe exatamente para isso.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false"><span>O que o avaliador do TCC quer ver?</span><span class="acc-icon">+</span></button>
+            <div class="acc-content"><p>Clareza de raciocínio: problema bem definido, justificativa teórica, requisitos rastreáveis, decisões justificadas e um produto que funciona. Use este guia como o fio condutor da sua monografia.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" aria-expanded="false"><span>Como não travar no perfeccionismo?</span><span class="acc-icon">+</span></button>
+            <div class="acc-content"><p>Defina o MVP antes de codar e trate tudo que está fora dele como “próxima versão”. Entregue algo funcional para uma pessoa real o quanto antes. Feedback vale mais que ajuste invisível.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta-final">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Ideias não viram projetos sozinhas. <span>Você faz acontecer.</span></h2>
+          <p>Escolha o primeiro passo da Etapa 1 e comece hoje, mesmo que seja só escrever o problema em uma frase.</p>
+        </div>
+        <a href="#etapa1" class="btn btn-light btn-lg">Voltar ao primeiro passo →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="brand-mark">Z<span>→</span>E</span>
+        <p>Um guia prático para quem está construindo algo pela primeira vez.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#jornada">Jornada</a>
+        <a href="#plano">Plano de ação</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#inicio">↑ Topo</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">Feito com propósito para TCCs, projetos pessoais e primeiras startups.</div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- Menu mobile ---------- */
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      navToggle.addEventListener('click', () => {
+        const open = navMenu.classList.toggle('open');
+        navToggle.classList.toggle('active', open);
+        navToggle.setAttribute('aria-expanded', String(open));
+      });
+      document.querySelectorAll('.nav-menu a').forEach(a => a.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }));
+
+      /* ---------- Barra de progresso de leitura ---------- */
+      const scrollProgress = document.getElementById('scrollProgress');
+      const backToTop = document.getElementById('backToTop');
+      const navbar = document.getElementById('navbar');
+      function onScroll() {
+        const h = document.documentElement;
+        const max = h.scrollHeight - h.clientHeight;
+        const pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+        scrollProgress.style.width = pct + '%';
+        navbar.classList.toggle('scrolled', h.scrollTop > 20);
+        backToTop.classList.toggle('visible', h.scrollTop > 500);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      /* ---------- Scroll spy (nav ativa) ---------- */
+      const sections = ['inicio', 'jornada', 'etapa1', 'etapa2', 'etapa3', 'etapa4', 'etapa5', 'etapa6', 'plano', 'faq']
+        .map(id => document.getElementById(id)).filter(Boolean);
+      const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(link => {
+              const isActive = link.getAttribute('href') === '#' + id ||
+                (link.getAttribute('href') === '#etapa1' && /^etapa/.test(id));
+              link.classList.toggle('active', isActive);
+            });
+          }
+        });
+      }, { rootMargin: '-30% 0px -60% 0px' });
+      sections.forEach(s => observer.observe(s));
+
+      /* ---------- Revelação ao rolar ---------- */
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+      /* ---------- Abas ---------- */
+      document.querySelectorAll('[data-tabs]').forEach(tabs => {
+        const btns = tabs.querySelectorAll('.tab-btn');
+        const panels = tabs.querySelectorAll('.tab-panel');
+        btns.forEach(btn => btn.addEventListener('click', () => {
+          btns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+          panels.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          tabs.querySelector('#' + btn.dataset.tab).classList.add('active');
+        }));
+      });
+
+      /* ---------- Acordeão (FAQ) ---------- */
+      document.querySelectorAll('.acc-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.parentElement;
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.acc-item').forEach(i => { i.classList.remove('open'); i.querySelector('.acc-trigger').setAttribute('aria-expanded', 'false'); });
+          if (!isOpen) { item.classList.add('open'); trigger.setAttribute('aria-expanded', 'true'); }
+        });
+      });
+
+      /* ---------- Checklist com persistência ---------- */
+      const checklistData = [
+        { etapa: 'Etapa 1 — Ideação', itens: [
+          'Escrevi o problema em uma frase clara',
+          'Fiz entrevistas com pessoas do contexto',
+          'Pesquisei 3 soluções existentes',
+          'Criei 1 persona bem definida'
+        ]},
+        { etapa: 'Etapa 2 — Estratégia', itens: [
+          'Preenchi a Matriz SWOT',
+          'Escrevi minha proposta de valor'
+        ]},
+        { etapa: 'Etapa 3 — Requisitos', itens: [
+          'Listei requisitos funcionais',
+          'Listei requisitos não funcionais',
+          'Defini as regras de negócio'
+        ]},
+        { etapa: 'Etapa 4 — Modelagem', itens: [
+          'Desenhei o fluxo de telas',
+          'Criei os diagramas básicos',
+          'Escolhi e justifiquei a tecnologia'
+        ]},
+        { etapa: 'Etapa 5 — Planejamento', itens: [
+          'Montei meu quadro Kanban',
+          'Defini o escopo do MVP',
+          'Criei um cronograma com folga'
+        ]},
+        { etapa: 'Etapa 6 — Entrega', itens: [
+          'Organizei o repositório no Git',
+          'Executei os testes',
+          'Preparei a apresentação final'
+        ]}
+      ];
+
+      const groupsEl = document.getElementById('checklistGroups');
+      const STORAGE_KEY = 'guia-projeto-checklist';
+      let state = {};
+      try { state = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) { state = {}; }
+
+      const total = checklistData.reduce((sum, g) => sum + g.itens.length, 0);
+      checklistData.forEach((group, gi) => {
+        const box = document.createElement('div');
+        box.className = 'check-group';
+        const title = document.createElement('h4');
+        title.textContent = group.etapa;
+        box.appendChild(title);
+        group.itens.forEach((item, ii) => {
+          const key = gi + '-' + ii;
+          const label = document.createElement('label');
+          label.className = 'check-item' + (state[key] ? ' done' : '');
+          const cb = document.createElement('input');
+          cb.type = 'checkbox';
+          cb.checked = !!state[key];
+          cb.dataset.key = key;
+          cb.addEventListener('change', () => {
+            state[key] = cb.checked;
+            label.classList.toggle('done', cb.checked);
+            save();
+          });
+          const span = document.createElement('span');
+          span.textContent = item;
+          label.appendChild(cb);
+          label.appendChild(span);
+          box.appendChild(label);
+        });
+        groupsEl.appendChild(box);
+      });
+
+      const progressFill = document.getElementById('checkProgress');
+      const progressText = document.getElementById('progressText');
+      const progressPercent = document.getElementById('progressPercent');
+      function save() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        const done = Object.values(state).filter(Boolean).length;
+        const pct = Math.round((done / total) * 100);
+        progressFill.style.width = pct + '%';
+        progressText.textContent = done + ' de ' + total + ' itens concluídos';
+        progressPercent.textContent = pct + '%';
+      }
+      save();
+
+      document.getElementById('resetChecklist').addEventListener('click', () => {
+        state = {};
+        localStorage.removeItem(STORAGE_KEY);
+        document.querySelectorAll('.check-item').forEach(l => { l.classList.remove('done'); l.querySelector('input').checked = false; });
+        save();
+      });
+    })();
+  </script>
+</body>
+</html>
